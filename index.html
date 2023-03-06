@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/personal_page_style.css">
+    <link rel="icon"  href="img/person_page_icon_360x360.png">
+    <title>Personal page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">About us</a>
+            <a href="#">Hobby</a>
+            <a href="#">Contacts</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <div class="about_us">
+            <div>
+                <img src="img/profile_picture.png" alt="image" title="title">
+            </div>
+            <div class="about_us_description">
+                <p>
+                    <strong>Владелец</strong>
+                    <span>Антон Крамский</span>
+                </p>
+
+                <p>
+                    <strong>Изучаемые языки:</strong>
+                    <span>JavaScript и Python</span>
+                </p>
+
+                <p>
+                    <strong>Опыт разработки</strong>
+                    <span>
+                        <p>Мини игры на Python</p>
+                        <p>Персональные страницы на HTML+CSS+JavaScript</p>
+                        <p>Ведение проектов в Git</p>
+                    </span>
+                </p>
+
+            </div>
+        <div class="my_game" id="my_game">
+            <h2>Игра в подсчет</h2>
+            <p></p>
+            <input type="number" hidden="true"> <!-- Поле ввода. Изначально скрытое -->
+            <button>Начать</button>
+        </div>
+        </div>
+        <div class="choosed_block"> 
+            <h2>Элементы для выбора</h2>
+            <p>Элементов выбрано: <span>0</span></p>
+            <div class="choosed_block_container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+        </div>
+
+        <div class="posts_block">
+            <h2>Блог постов</h2>
+            <button>Показать посты</button>
+            <div class="posts_block_container">
+                <!-- Разделы блога не указываются вручную, а пишутся в скрипте -->
+                <!-- <p>
+                    <h3></h3>
+                    <span></span>
+                </p> -->
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>05/03/2023</p>
+    </footer>
+    <script src="js/personal_page_game.js"></script>
+</body>
+
+</html>
