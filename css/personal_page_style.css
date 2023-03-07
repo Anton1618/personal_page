@@ -14,14 +14,14 @@
 /* Общий стиль для блока header */
 header { 
     background-color: bisque;
+    position: fixed; 
 }
 
 
 /* Стиль блока в header и его элементов через flex, для отображения их слева по центру планки */
 nav { 
-    /* border: 5px dashed black; */
-    /* width: min-content; */
     height: inherit;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -33,6 +33,10 @@ nav > a {
     color: black;
     padding: 15px; /*Отступы от контента (текста ссылок) до края блока*/
     font-size: 100%; /*Размер текста ссылок*/
+}
+
+main {
+    margin-top: 50px;
 }
 
 
@@ -81,7 +85,8 @@ nav > a {
 /* Задание стиля для поля ввода input и кнопки button */
 .my_game input, .my_game button {
     border: none; /* Без обводки */
-    margin: 3%; /*Отступы между блоками внутренними блоками*/
+    margin: 10px 10px;
+    font-size: 20px;
 }
 
 /* Для кнопки button отдельно задается значение занимаемого пространства*/
@@ -96,6 +101,10 @@ nav > a {
     background-color: rgb(255, 243, 226); /*С отключенными границами поле ввода не заметно, поэтому задается цвет поля*/
     outline: none; /*Очистка внешней обводки при вводе данных */
 }
+
+
+
+
 
 /* Позиционирование элементов для выбора. Блоки должны следовать сверху вниз */
 .choosed_block {
